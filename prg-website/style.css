@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ .nav-item{
+    color:rgb(87, 86, 85);
+    border-right: 2px solid rgb(199, 196, 196);
+}
+.nav-last-item{
+    color:rgb(87, 86, 85);
+}
+.bold{
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+ p{
+    color:rgb(87, 86, 85);
+
+}
+.hero-i .image{
+    margin-left:100px;
+}
+.app .image{
+    padding-left:300px;
+}
+.herobutton{
+    border-radius: 30px;
+    padding:2% 4%;
+}
+.project{
+    text-align: center;
+    color:rgb(105, 104, 103);
+}
+
+input{
+    padding:1% 2%;
+}
+.touch{
+    text-align: center;
+}
+.touchbutton{
+    border-radius:none ;
+    padding:1% ;
+    border: none;
+    background: #413d3d;
+    color: white;
+}
+.footer .content{
+margin: auto;
+}
+.footer{
+    text-align: center;
+}
+
+
