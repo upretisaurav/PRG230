@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .square {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        @media (max-width: 767px) {
+            .square {
+                display: block;
+            }
+            .red {
+                background-color: yellow;
+            }
+            .green {
+                background-color: blue;
+            }
+            .blue {
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="square red"></div>
+    <div class="square green"></div>
+    <div class="square blue"></div>
+</body>
+</html>

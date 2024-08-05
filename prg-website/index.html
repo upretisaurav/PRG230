@@ -11,147 +11,141 @@
 </head>
 
 <body>
-  <div class="navbar container-fluid">
-    <div class="nav container d-flex justify-content-space-between p-4">
-      <div>
-        <p class="bold">OneCompany</p>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand bold" href="#">OneCompany</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <div class="navbar-nav ms-auto d-none d-lg-flex">
+          <a class="nav-item nav-link px-5" href="#">About</a>
+          <a class="nav-item nav-link px-5" href="#">Services</a>
+          <a class="nav-item nav-link px-5" href="#">Contact</a>
+        </div>
       </div>
-      <div class="d-flex">
-        <div class="nav-item px-5">
-          <p class="pt-1">About</p>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">OneCompany</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <a class="nav-item nav-link" href="#">About</a>
+        <a class="nav-item nav-link" href="#">Services</a>
+        <a class="nav-item nav-link" href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid hero p-5 text-center text-lg-start">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 order-2 order-lg-1">
+          <h1 class="fw-bold">Unleash the Full Potential<br /> Of AI</h1>
+          <br />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
+            mattis ac neque.</p>
+          <button class="herobutton">LEARN MORE</button>
         </div>
-        <div class="nav-item px-5">
-          <p class="pt-1">Services</p>
+        <div class="col-lg-6 order-1 order-lg-2">
+          <img class="image w-100" src="./images/hero.png" />
         </div>
-        <div class="nav-last-item px-5">
-          <p class="pt-1">Contact</p>
+      </div>
+    </div>
+  </div>
+  <hr />
+
+  <div class="container-fluid px-5">
+    <div class="row text-center project p-5">
+      <div class="col-lg-4 p-5">
+        <img src="./images/tick.png" />
+        <br />
+        <br />
+        <h2>Project One</h2>
+        <br />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis felis convallis, rhoncus leo id,
+          scelerisque purus. Ut auctor gravida nulla.</p>
+      </div>
+      <div class="col-lg-4 p-5">
+        <img src="./images/flag.png" />
+        <br />
+        <br />
+        <h2>Project Two</h2>
+        <br />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis felis convallis, rhoncus leo id,
+          scelerisque purus. Ut auctor gravida nulla.</p>
+      </div>
+      <div class="col-lg-4 p-5">
+        <img src="./images/star.png" />
+        <br />
+        <br />
+        <h2>Project Three</h2>
+        <br />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis felis convallis, rhoncus leo id,
+          scelerisque purus. Ut auctor gravida nulla.</p>
+      </div>
+    </div>
+    <div class="row text-center text-lg-start d-flex justify-content-center align-items-center app p-5">
+      <div class="col-lg-6">
+        <h3 class="fw-bold">Benefit of the App</h3>
+        <br />
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam, eaque ipsa quae ab illo inventore veritatis.
+          <br />
+          <br />Ut auctor gravida nulla. Nam id erat elementum, accumsan dui non, porttitor lorem.</p>
+      </div>
+      <div class="col-lg-6">
+        <img class="image w-100" src="./images/app.png" />
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="container-fluid touch p-5 text-center">
+    <div class="container p-4">
+      <h1>Get In Touch</h1>
+      <br />
+      <br />
+      <div class="row g-3 justify-content-center">
+        <div class="col-md-6">
+          <input class="form-control" type="text" placeholder="Email Address">
+        </div>
+        <div class="col-md-6">
+          <input class="form-control" type="text" placeholder="Full Name">
+        </div>
+        <div class="col-md-12">
+          <button class="touchbutton">Subscribe</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- <div class="container px-4">
-        <p>Home / About</p>
-    </div> -->
-
-  <div class="container-fluid hero p-5">
-    <div class="hero-i container  d-flex justify-content-space-between px-5">
-      <div>
-        <h1 class="fw-bold">Unleash the Full Potential<br /> Of AI</h1>
-        <br />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br />elit. Nulla quam velit, vulputate eu pharetra nec,
-          <br /> mattis ac neque.
-
-        </p>
-        <button class="herobutton">LEARN MORE</button>
+  <div class="container-fluid footer">
+    <div class="container d-flex flex-column align-items-center">
+      <div class="d-flex content">
+        <div class="nav-item px-3">
+          <p class="pt-1">About</p>
+        </div>
+        <div class="nav-item px-3">
+          <p class="pt-1">Services</p>
+        </div>
+        <div class="nav-last-item px-3">
+          <p class="pt-1">Contact</p>
+        </div>
       </div>
-      <div>
-        <img class="image px-5" src="./images/hero.png" />
-      </div>
+      <hr class="w-100" />
+      <p class="text-center">
+        Lalitpur, Patan<br />© 2024 Your Company. All rights reserved.
+      </p>
     </div>
-    <hr />
-
-    <div class="container-fluid px-5">
-      <div class="container d-flex  justify-content-space-between project p-5">
-        <div class="p-5 ">
-          <img src="./images/tick.png" />
-          <br />
-          <br />
-          <h2>Project One</h2>
-          <br />
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis felis convallis, rhoncus leo id,
-            scelerisque purus. Ut auctor gravida nulla.
-          </p>
-        </div>
-        <div class="p-5 ">
-          <img src="./images/flag.png" />
-          <br />
-          <br />
-          <h2>Project Two</h2>
-          <br />
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis felis convallis, rhoncus leo id,
-            scelerisque purus. Ut auctor gravida nulla.
-          </p>
-        </div>
-        <div class="p-5 ">
-          <img src="./images/star.png" />
-          <br />
-          <br />
-          <h2>Project Three</h2>
-          <br />
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis felis convallis, rhoncus leo id,
-            scelerisque purus. Ut auctor gravida nulla.
-          </p>
-        </div>
-      </div>
-      <div class="app container  d-flex justify-content-space-between px-5">
-        <div>
-          <h3 class="fw-bold">Benefit of the App</h3>
-          <br />
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-            aperiam, eaque ipsa quae ab illo inventore veritatiis.
-            <br />
-            <br />Ut auctor gravida nulla. Nam id erat elementum, accumsan dui non, porttitor lorem.
-
-
-
-          </p>
-
-        </div>
-        <div>
-          <img class="image px-5" src="./images/app.png" />
-        </div>
-
-      </div>
-      <hr />
-      <div class="container-fluid touch p-5">
-        <div class="container p-4">
-          <h1>Get In Touch</h1>
-          <br />
-          <br />
-          <div>
-            <input placeholder="Email Address">
-            <input placeholder="Full Name">
-            <button class="touchbutton">Subscribe</button>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="container-fluid footer">
-        <div class="container d-flex flex-row">
-          <div class="d-flex content">
-            <div class="nav-item px-5">
-              <p class="pt-1">About</p>
-            </div>
-            <div class="nav-item px-5">
-              <p class="pt-1">Services</p>
-            </div>
-            <div class="nav-last-item px-5">
-              <p class="pt-1">Contact</p>
-            </div>
-          </div>
-        </div>
-        <hr />
-        <p>
-          Lalitpur, Patan<br />
-
-          © 2024 Your Company. All rights reserved.
-        </p>
-      </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-  integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-
-
-

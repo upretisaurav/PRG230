@@ -1,57 +1,122 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}
-
- .nav-item{
-    color:rgb(87, 86, 85);
+  }
+  
+  .nav-item {
+    color: rgb(87, 86, 85);
     border-right: 2px solid rgb(199, 196, 196);
-}
-.nav-last-item{
-    color:rgb(87, 86, 85);
-}
-.bold{
+  }
+  
+  .nav-last-item {
+    color: rgb(87, 86, 85);
+  }
+  
+  .bold {
     font-size: 3vh;
     font-weight: bold;
-}
-
- p{
-    color:rgb(87, 86, 85);
-
-}
-.hero-i .image{
-    margin-left:100px;
-}
-.app .image{
-    padding-left:300px;
-}
-.herobutton{
+  }
+  
+  p {
+    color: rgb(87, 86, 85);
+  }
+  
+  .hero-i .image {
+    margin-left: 100px;
+  }
+  
+  .app .image {
+    padding-left: 300px;
+  }
+  
+  .herobutton {
     border-radius: 30px;
-    padding:2% 4%;
-}
-.project{
+    padding: 2% 4%;
+  }
+  
+  .project {
     text-align: center;
-    color:rgb(105, 104, 103);
-}
-
-input{
-    padding:1% 2%;
-}
-.touch{
+    color: rgb(105, 104, 103);
+  }
+  
+  input {
+    padding: 1% 2%;
+  }
+  
+  .touch {
     text-align: center;
-}
-.touchbutton{
-    border-radius:none ;
-    padding:1% ;
+  }
+  
+  .touchbutton {
+    padding: 1%;
     border: none;
     background: #413d3d;
     color: white;
-}
-.footer .content{
-margin: auto;
-}
-.footer{
+  }
+  
+  .footer .content {
+    margin: auto;
+  }
+  
+  .footer {
     text-align: center;
-}
-
-
+  }
+  
+  @media (max-width: 992px) {
+    .hero-i .image,
+    .app .image {
+      margin-left: 0;
+      padding-left: 0;
+    }
+    
+    .hero .row,
+    .app .row {
+      flex-direction: column-reverse;
+    }
+  
+    .hero-i,
+    .app {
+      text-align: center;
+    }
+  
+    .project .col-lg-4 {
+      margin-bottom: 20px;
+    }
+  
+    .touch .form-control {
+      margin-bottom: 10px;
+    }
+  
+    .footer .content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer .nav-item {
+      border-right: none;
+    }
+  
+    .footer p {
+      margin: 10px 0;
+    }
+  
+    .footer hr {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .project p {
+      font-size: 0.9rem;
+    }
+  
+    .app p {
+      font-size: 0.9rem;
+    }
+  }
+  
